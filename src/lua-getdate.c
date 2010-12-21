@@ -1,10 +1,10 @@
 /*
-* lua-inih.c: bindings for inih, simple .INI file parser
+* lua-getdate.c: bindings for strptime() function
 */
 
 #define LUAGETDATE_VERSION     "lua-getdate 0.1"
 #define LUAGETDATE_COPYRIGHT   "Copyright (C) 2010, lua-getdate authors"
-#define LUAGETDATE_DESCRIPTION "Bindings for getdate() function"
+#define LUAGETDATE_DESCRIPTION "Bindings for strptime() function"
 
 #if defined (__cplusplus)
 extern "C" {

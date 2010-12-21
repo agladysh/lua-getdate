@@ -5,7 +5,7 @@ source = {
    branch = "master"
 }
 description = {
-   summary = "Bindings for getdate()",
+   summary = "Bindings for strptime()",
    homepage = "http://github.com/agladysh/lua-getdate",
    license = "MIT/X11",
    maintainer = "Alexander Gladysh <agladysh@gmail.com>"
