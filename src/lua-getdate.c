@@ -35,24 +35,24 @@ static void setboolfield (lua_State *L, const char *key, int value) {
 }
 
 /*
-* getdate.strptime(date : string, format : string) 
+* getdate.strptime(date : string, format : string)
 *   : time table in os.time() format / nil, error_message
 */
 static int l_strptime(lua_State * L)
 {
   const char * date = luaL_checkstring(L, 1);
-  const char * format = luaL_checkstring(L, 2); 
+  const char * format = luaL_checkstring(L, 2);
   struct tm tm;
 
   memset(&tm, 0, sizeof(tm));
-  
+
   if (!strptime(date, format, &tm))
   {
     lua_pushnil(L);
     lua_pushliteral(L, "failed to parse date");
     return 2;
   }
-  
+
   /* From lua5.1.4 loslib.c */
   lua_createtable(L, 0, 9);  /* 9 = number of fields */
   setfield(L, "sec", tm.tm_sec);
