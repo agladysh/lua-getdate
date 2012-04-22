@@ -1,6 +1,11 @@
 lua-getdate — bindings for strptime()
 =====================================
 
+Project status
+--------------
+
+*WARNING:* lua-getdate is discontinued. Please use luaposix instead.
+
 Usage
 -----
 
