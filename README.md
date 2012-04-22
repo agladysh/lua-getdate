@@ -1,5 +1,5 @@
-lua-getdate — bindings for getdate()
-====================================
+lua-getdate — bindings for strptime()
+=====================================
 
 Usage
 -----
